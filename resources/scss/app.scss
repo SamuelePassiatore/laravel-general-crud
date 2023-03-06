@@ -1,0 +1,11 @@
+@import "~bootstrap/scss/bootstrap";
+@import "tool-detail";
+@import "tools_index";
+@import "trash";
+@import "home";
+
+body {
+    background-image: url("http://wmad.cs.vt.edu/images/code_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

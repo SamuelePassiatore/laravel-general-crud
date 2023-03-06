@@ -1,0 +1,59 @@
+#tools {
+    a.tool-card {
+        text-decoration: none;
+        color: black;
+        border-radius: 10px;
+        box-shadow: 2px 5px 5px rgba($color: red, $alpha: 0.4);
+        color: black;
+        background-color: #ddd;
+
+        img {
+            border-radius: 10px;
+        }
+
+        .category {
+            text-transform: capitalize;
+            color: rgb(16, 73, 159);
+        }
+
+        .fa-brands {
+            font-size: 20px;
+        }
+    }
+
+    .col {
+        position: relative;
+        transition: all 0.5s;
+
+        &:hover {
+            scale: 1.05;
+        }
+
+        &:hover .cs-button {
+            opacity: 1;
+        }
+
+        .cs-button {
+            position: absolute;
+            right: 20px;
+            opacity: 0;
+            transition: all 1s;
+
+            &.delete {
+                top: 10px;
+            }
+
+            &.edit {
+                bottom: 10px;
+
+                .btn-warning {
+                    color: white;
+                }
+            }
+
+            .btn {
+                width: 42px;
+            }
+        }
+    }
+}
